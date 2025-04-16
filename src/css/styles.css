@@ -1,0 +1,164 @@
+:root {
+  --clr-text: #fdcdf9;
+  --clr-selection: rgba(255, 156, 245, 0.3);
+  --clr-background: #212720;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("/fonts/Humane-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background: var(--clr-background);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+::selection {
+  background-color: var(--clr-selection);
+  color: var(--clr-text);
+}
+
+::-moz-selection {
+  background-color: var(--clr-selection);
+  color: var(--clr-text);
+}
+
+.text__1,
+.text__2,
+.text__3 {
+  color: var(--clr-text);
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.content {
+  width: 100%;
+  font-family: Humane;
+  font-size: 0.825vw;
+
+  @media (max-width: 768px) {
+    font-size: 2vw;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 70em;
+  gap: 17.6em;
+  padding: 6em 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.section__main__content {
+  gap: 5.6em;
+}
+
+.text__1 {
+  font-size: 19.4em;
+  font-weight: 700;
+  max-width: 45em;
+
+  @media (max-width: 768px) {
+    font-size: 13.979em;
+  }
+}
+
+.text__2 {
+  font-size: 4.9em;
+  max-width: 7.6em;
+  letter-spacing: 0.01em;
+}
+
+.text__3 {
+  font-size: 13.979em;
+  max-width: 2.4em;
+}
