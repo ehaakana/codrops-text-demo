@@ -3,80 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Creating Responsive and Accessible WebGL Text With Three.js and Troika |
-      Demo | Codrops
-    </title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Codrops" />
+    <title>Responsive and Accessible WebGL Text With Three.js and Troika | Demo | Codrops</title>
     <link rel="shortcut icon" href="https://tympanus.net/favicon/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="src/css/base.css" />
     <link rel="stylesheet" type="text/css" href="src/css/scroll.css" />
     <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
     <script>
-      document.documentElement.className = "js";
+      document.documentElement.className = 'js';
     </script>
-    <!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
   </head>
 
-  <body class="demo-1 loading">
+  <body class="loading">
     <main>
       <header class="frame">
-        <h1 class="frame__title">The Title</h1>
-        <a class="frame__back" href="https://tympanus.net/codrops/?p="
-          >Article</a
-        >
-        <a class="frame__archive" href="https://tympanus.net/codrops/demos/"
-          >All demos</a
-        >
-        <a class="frame__github" href="https://github.com/codrops/">GitHub</a>
+        <h1 class="frame__title">Responsive and Accessible WebGL Text</h1>
+        <a class="frame__back" href="https://tympanus.net/codrops/?p=92085">Read the article</a>
+        <a class="frame__github" href="https://github.com/ehaakana/codrops-text-demo">Code</a>
+        <a class="frame__archive" href="https://tympanus.net/codrops/demos/">All demos</a>
         <nav class="frame__tags">
           <a href="https://tympanus.net/codrops/demos/?tag=scroll">#scroll</a>
-          <a href="https://tympanus.net/codrops/demos/?tag=three-js"
-            >#three.js</a
-          >
+          <a href="https://tympanus.net/codrops/demos/?tag=three-js">#three.js</a>
           <a href="https://tympanus.net/codrops/demos/?tag=webgl">#webgl</a>
-        </nav>
-        <nav class="frame__demos">
-          <span>Demo</span>
+          <a href="https://tympanus.net/codrops/demos/?tag=typography">#typography</a>
         </nav>
       </header>
       <div class="content">
         <div class="container">
           <section class="section__heading">
             <h3 data-animation="webgl-text" class="text__2">THREE.JS</h3>
-            <h2 data-animation="webgl-text" class="text__1">
-              RESPONSIVE AND ACCESSIBLE TEXT
-            </h2>
+            <h2 data-animation="webgl-text" class="text__1">RESPONSIVE AND ACCESSIBLE TEXT</h2>
           </section>
           <section class="section__main__content">
             <p data-animation="webgl-text" class="text__2">
-              THIS TEXT IS STYLED TO LOOK LIKE A TYPICAL BLOCK OF TEXT ON A
-              STANDARD WEBSITE. BUT UNDER THE SURFACE, IT’S BEING RENDERED WITH
-              WEBGL INSTEAD OF TRADITIONAL HTML.
+              THIS TEXT IS STYLED TO LOOK LIKE A TYPICAL BLOCK OF TEXT ON A STANDARD WEBSITE. BUT UNDER THE SURFACE,
+              IT’S BEING RENDERED WITH WEBGL INSTEAD OF TRADITIONAL HTML.
             </p>
             <p data-animation="webgl-text" class="text__2">
-              THIS OPENS THE DOOR TO CUSTOM SHADER EFFECTS AND INTERACTIONS THAT
-              GO BEYOND WHAT’S POSSIBLE WITH TRADITIONAL HTML.
+              THIS OPENS THE DOOR TO CUSTOM SHADER EFFECTS AND INTERACTIONS THAT GO BEYOND WHAT’S POSSIBLE WITH
+              TRADITIONAL HTML.
             </p>
             <p data-animation="webgl-text" class="text__2">
-              WE KEEP THE UNDERYLING HTML STRUCTURE PRESENT IN THE DOM. RATHER
-              THAN CREATING MESHES DIRECTLY IN THREE.JS, THE SCENE IS BUILT BY
-              READING FROM THE EXISTING HTML CONTENT. THIS WAY, SCREEN READERS,
-              SEARCH ENGINES, AND OTHER TOOLS CAN STILL INTERPRET THE PAGE AS
-              EXPECTED.
+              WE KEEP THE UNDERYLING HTML STRUCTURE PRESENT IN THE DOM. RATHER THAN CREATING MESHES DIRECTLY IN
+              THREE.JS, THE SCENE IS BUILT BY READING FROM THE EXISTING HTML CONTENT. THIS WAY, SCREEN READERS, SEARCH
+              ENGINES, AND OTHER TOOLS CAN STILL INTERPRET THE PAGE AS EXPECTED.
             </p>
           </section>
           <section class="section__footer">
-            <p data-animation="webgl-text" class="text__3">
-              NOW GO CRAZY WITH THE SHADERS :)
-            </p>
+            <p data-animation="webgl-text" class="text__3">NOW GO CRAZY WITH THE SHADERS :)</p>
           </section>
         </div>
       </div>
     </main>
-    <!--script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script-->
+    <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
     <script type="module" src="/src/js/main.ts"></script>
   </body>
 </html>
